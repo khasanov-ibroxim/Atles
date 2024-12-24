@@ -26,7 +26,7 @@ export default function Services() {
                     <p className="one">01 - Швейный<br/>цех</p>
                     <div className="bottom">
                         <p className="two">
-                            Оснащён современным оборудованием <br/> и высококвалифицированным персоналом.
+                            Оснащён современным оборудованием <br/>и высококвалифицированным персоналом.
                         </p>
                         <NorthEastIcon/>
                     </div>
