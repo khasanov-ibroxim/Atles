@@ -21,17 +21,37 @@ export default function Navbar() {
                                 <li>
                                     <Link className='a-text' to='/about'>О нас</Link>
                                 </li>
+                                <li className="dropdown_box">
+                                    <div className="dropdown_btn">Производство</div>
+                                    <div className="dropdown_menu_box">
+                                        <Link to={"/:id/fabric".replace(":id" , 1)} className="dropdown_menu_item">
+                                            <>Швейный цех</>
+                                        </Link>
+                                        <Link to={"/:id/fabric".replace(":id" , 2)} className="dropdown_menu_item">
+                                            <>Раскройный цех</>
+                                        </Link>
+                                        <Link to={"/:id/fabric".replace(":id" , 3)} className="dropdown_menu_item">
+                                            <>Гладильно упаковочный цех</>
+                                        </Link>
+                                        <Link to={"/:id/fabric".replace(":id" , 4)} className="dropdown_menu_item">
+                                            <>Контроль качества</>
+                                        </Link>
+                                    </div>
+                                </li>
+
+
                                 <li>
                                     <Link className='a-text' to='/contact'>Контакты</Link>
                                 </li>
                             </ul>
 
                             <div className="box-right">
-                                <LocalPhoneIcon />
+                                <LocalPhoneIcon/>
                                 <div className="text">
-                                    <a href="tel:+998941582000" className="number">+998 (94) 158-20-00</a>                                </div>
+                                    <a href="tel:+998941582000" className="number">+998 (94) 158-20-00</a></div>
                             </div>
-                            <button className='right' onClick={()=>navigate("/contact")}>Cвяжитесь <NorthEastIcon /> </button>
+                            <button className='right' onClick={() => navigate("/contact")}>Cвяжитесь <NorthEastIcon/>
+                            </button>
                         </div>
                         <i onClick={() => setShow(!show)} className="bars fa-solid fa-bars"></i>
                     </div>

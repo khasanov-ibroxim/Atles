@@ -19,7 +19,7 @@ export default function Services() {
                 </div>
             </div>
             <div className="title">
-                <Link to='/fabric' className="box">
+                <Link to={"/:id/fabric".replace(":id" , 1)} className="box">
                     <div className="foto">
                         <img src={foto1} alt=""/>
                     </div>
@@ -31,7 +31,7 @@ export default function Services() {
                         <NorthEastIcon/>
                     </div>
                 </Link>
-                <Link to='/fabric' className="box">
+                <Link to={"/:id/fabric".replace(":id" , 2)} className="box">
                     <div className="foto">
                         <img src={foto2} alt=""/>
                     </div>
@@ -45,7 +45,7 @@ export default function Services() {
                         <NorthEastIcon/>
                     </div>
                 </Link>
-                <Link to='/fabric' className="box">
+                <Link to={"/:id/fabric".replace(":id" , 3)} className="box">
                     <div className="foto">
                         <img src={foto3} alt=""/>
                     </div>
@@ -58,7 +58,7 @@ export default function Services() {
                         <NorthEastIcon/>
                     </div>
                 </Link>
-                <Link to='/fabric' className="box">
+                <Link to={"/:id/fabric".replace(":id" , 4)} className="box">
                     <div className="foto">
                         <img src={foto4} alt=""/>
                     </div>

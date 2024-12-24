@@ -33,7 +33,7 @@ section.services .title .box {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     overflow: hidden;
     padding: 70px 0px;
@@ -104,6 +104,7 @@ section.services .title .box .bottom {
     display: flex;
     align-items: center;
     grid-gap: 50px;
+    margin-right: 20px;
 }
 
 
@@ -111,6 +112,7 @@ section.services .title .box p.one {
     z-index: 1;
     font-size: 50px;
     margin-bottom: 0px;
+    margin-left: 200px;
 }
 
 section.services .title .box:hover .bottom svg {
@@ -121,8 +123,11 @@ section.services .title .box:hover .bottom svg {
 
 section.services .title .box .bottom p.two {
     font-size: 16px;
-    color: #ffffffcc;
+    color: #fff;
     margin-bottom: 0px;
+    font-weight: 600;
+    width: 340px;
+
 }
 
 section.services .title .box:hover .bottom p.two {
@@ -151,6 +156,9 @@ section.services .title .box svg {
     }
     section.services .title .box:hover .bottom p.two{
         font-size: 15px;
+    }
+    section.services .title .box p.one{
+        margin-left: 80px;
     }
 }
 
