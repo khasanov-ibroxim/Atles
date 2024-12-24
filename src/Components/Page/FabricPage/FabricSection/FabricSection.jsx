@@ -68,6 +68,7 @@ export default function FabricSection({DataId}) {
                                     сотрудников мы гарантируем идеальное состояние вашей продукции</p>
                             </div>
                         </>}
+                        {DataId === 3 && <img className='foto-1' src={kantrol_element} alt=""/>}
                         {DataId === 4 && <>
                             <div className="left-text">
                                 <h1 className="top">Контроль качества: безупречность на каждом стежке</h1>
@@ -81,7 +82,7 @@ export default function FabricSection({DataId}) {
                                 </p>
                             </div>
                         </>}
-                        {DataId === 4 && <img className='foto-1' src={kantrol_element} alt=""/>}
+                        {/*{DataId === 4 && <img className='foto-1' src={kantrol_element} alt=""/>}*/}
                     </div>
                 </div>
                 <div className="row">
@@ -96,8 +97,8 @@ export default function FabricSection({DataId}) {
                     <div className="col-lg-5">
                         {DataId === 1 && <img className='foto-2' src={shveyniy_2} alt=""/>}
                         {DataId === 2 && <img className='foto-2' src={rask_2} alt=""/>}
-                        {DataId === 3 && <img className='foto-2' src={rask_2} alt=""/>}
-                        {DataId === 4 && <img className='foto-2' src={kantrol_2} alt=""/>}
+                        {DataId === 3 && <img className='foto-2' src={kantrol_2} alt=""/>}
+                        {/*{DataId === 4 && <img className='foto-2' src={kantrol_2} alt=""/>}*/}
                     </div>
                     <div className="col-lg-7">
                         <p className="title">
@@ -204,8 +205,8 @@ export default function FabricSection({DataId}) {
                     <div className="col-lg-7">
                         {DataId === 1 && <img className='foto-3' src={shveyniy_3} alt=""/>}
                         {DataId === 2 && <img className='foto-3' src={rask_3} alt=""/>}
-                        {DataId === 3 && <img className='foto-3' src={rask_3} alt=""/>}
-                        {DataId === 4 && <img className='foto-3' src={kantrol_3} alt=""/>}
+                        {DataId === 3 && <img className='foto-3' src={kantrol_3} alt=""/>}
+                        {/*{DataId === 4 && <img className='foto-3' src={kantrol_3} alt=""/>}*/}
                     </div>
                 </div>
                 <div className="row">
