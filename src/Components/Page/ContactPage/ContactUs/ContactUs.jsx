@@ -25,7 +25,7 @@ export default function ContactUs() {
                         Наши координаты <EastIcon />
                     </a>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2886.323785509983!2d71.055892!3d40.895705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDUzJzQ0LjUiTiA3McKwMDMnMjEuMiJF!5e1!3m2!1sru!2s!4v1733810183129!5m2!1sru!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3015.9138330226765!2d71.055892!3d40.895705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDUzJzQ0LjUiTiA3McKwMDMnMjEuMiJF!5e0!3m2!1sru!2s!4v1735061303550!5m2!1sru!2s"
                         width="600" height="250" allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -33,8 +33,11 @@ export default function ContactUs() {
                     <a href="mailto:atlestextile@gmail.com" className="email">atlestextile@gmail.com</a>
                     <p className="title">Свяжитесь с нами</p>
                     <a href="tel:+998941582000" className="number">+998(94)158-20-00</a>
-                    <a href={"https://maps.app.goo.gl/i6uGKFHJbpeTyzXPA"} className="bottom">ул. Афросиаб,16
-                        100031, <br />г.Ташкент Узбекистан</a>
+                    <a href={"https://maps.app.goo.gl/jEzYGgGzeByror7A8"} className="bottom">
+                        Узбекистан г.Наманган <br/>
+                        Попский район <br/>
+                        Улица Чинор, дом 113
+                    </a>
                     <p className="media">Мы в социальных сетях</p>
                     <div className="icon">
                         <div className="i"><i className="fa-brands fa-facebook-f"></i></div>
