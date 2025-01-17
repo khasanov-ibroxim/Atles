@@ -194,6 +194,41 @@
     background: #1a1a1a;
 }
 
+.nav_dropdown{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+}
+.nav_dropdown a{
+
+    width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+
+    background: #c89501;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.5s;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+.nav_dropdown a p{
+    margin: 0 0 0 10px;
+    color: #ffff;
+}
+.nav_dropdown svg{
+    height: 100%;
+}
 @media(max-width:991px) {
     .bars {
         display: grid;
