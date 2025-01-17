@@ -174,7 +174,7 @@
 }
 
 .dropdown_box:hover .dropdown_menu_box {
-    display: block; /* Hoverda ko'rsatish */
+    display: block;
 }
 
 .dropdown_menu_item {
@@ -185,7 +185,7 @@
     color: black !important;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.3s ease; /* Effekt uchun o'tish */
+    transition: color 0.3s ease;
 }
 
 
