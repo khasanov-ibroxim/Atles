@@ -1,0 +1,155 @@
+.fabricSection{
+    width: 100%;
+    padding: 70px 0px;
+}
+.fabricSection .top-foto{
+    width: 100%;
+    border-radius: 15px;
+    height: 400px !important;
+}
+
+.fabricSection .left-text h1.top{
+    font-size: 34px;
+    margin-bottom: 0px;
+    color: #060616;
+    padding-bottom: 20px;
+}
+.fabricSection .row:nth-child(1) .col-lg-12:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 25px;
+}
+.fabricSection .left-text p.top{
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 0px;
+}
+.fabricSection .left-text p.top span{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.fabricSection .foto-1{
+    width: 320px;
+    height: 130px;
+    border-radius: 100px;
+}
+.fabricSection h1.title{
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #060616;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.fabricSection .row:nth-child(2){
+    align-items: center;
+}
+.fabricSection .foto-2{
+    width: 100%;
+    height: unset;
+    border-radius: 15px;
+}
+.fabricSection p.title{
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 0px;
+}
+.fabricSection .box{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    grid-gap: 150px;
+}
+.fabricSection .box .one{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+}
+.fabricSection .box .one p.bottom{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: black;
+}
+.fabricSection .row:nth-child(3){
+    padding-top: 40px;
+    align-items: flex-start;
+}
+.fabricSection h1.bottom{
+    font-size: 22px;
+    color: #060616;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+.fabricSection .foto-3{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+.fabricSection p.last{
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 0px;
+    padding-bottom: 20px; 
+}
+.fabricSection .row:nth-child(4){
+    padding-top: 25px;
+}
+.fabricSection .row:nth-child(4) p.last{
+    padding-bottom: 0px;
+}
+
+
+@media(max-width:991px){
+    .fabricSection .row:nth-child(1) .col-lg-12:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .fabricSection p.title{
+        padding-top: 15px;
+    }
+    .fabricSection .box{
+        grid-gap: unset;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:575px){
+    .fabricSection{
+        padding: 30px 0px;
+    }
+    .fabricSection .left-text h1.top{
+        font-size: 30px;
+        text-align: center;
+    }
+    .fabricSection .left-text p.top,
+    .fabricSection p.title,
+    .fabricSection .box .one p.bottom,
+    .fabricSection .row:nth-child(4) p.last{
+        font-size: 15px;
+    }
+    .fabricSection .foto-1{
+        width: 100%;
+        height: unset;
+    }
+    .fabricSection h1.title{
+        font-size: 20px;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .fabricSection .box{
+        flex-direction: column;
+        align-items: unset;
+        grid-gap: 15px;
+    }
+    .fabricSection .row:nth-child(3){
+        padding-top: 25px;
+    }
+    .fabricSection h1.bottom{
+        font-size: 20px;
+        text-align: center;
+    }
+}

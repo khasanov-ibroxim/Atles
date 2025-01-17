@@ -1,0 +1,286 @@
+.contactus {
+    width: 100%;
+    padding-top: 75px;
+}
+
+.contactus .box {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+
+.contactus .box .one {
+    width: 50%;
+}
+
+.contactus .box .one img {
+    width: 100%;
+    height: 100%;
+}
+
+.contactus .box .two {
+    width: 50%;
+    padding: 50px;
+    background: #efeeee;
+}
+
+.contactus .box .two a.top {
+    color: #060616;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.contactus .box .two a.top:hover {
+    color: #fe9e3f;
+}
+
+.contactus .box .two a.top svg {
+    font-size: 3.5rem;
+}
+
+.contactus .box .two form {
+    display: grid;
+    padding-top: 20px;
+    grid-gap: 15px;
+    background: transparent;
+}
+
+.contactus .box .two form input:focus {
+    outline: none;
+    border-bottom: 1px solid #fe9e3f;
+}
+
+.contactus .box .two form input::placeholder {
+    color: #686e73;
+}
+
+.contactus .box .two form input {
+    border: none;
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 14px;
+    color: #686e73;
+    background: transparent;
+}
+
+.contactus .box .two form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #fe9e3f;
+}
+
+.contactus .box .two form textarea {
+    border: none;
+    margin-top: 10px;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 14px;
+    color: #686e73;
+    background: transparent;
+}
+
+.contactus .box .two form textarea::placeholder {
+    color: #686e73;
+}
+
+.contactus .box .two form a.contact {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 25px;
+    transition: .3s;
+    border: 1px solid #fe9e3f;
+    background: #fe9e3f;
+}
+
+.contactus .box .two form a.contact:hover {
+    cursor: pointer;
+    transition: .3s;
+    background: transparent;
+
+    color: #686e73;
+    border: 1px solid #c2c2c2;
+}
+
+.contactus .box .two p.top {
+    color: #060616;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.contactus .box .two a.email {
+    font-size: 25px;
+    color: #060616;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.contactus .box .two a.email:hover,
+.contactus .box .two a.number:hover {
+    cursor: pointer;
+    transition: .3s;
+    color: #fe9e3f;
+}
+
+.contactus .box .two p.title {
+    color: #060616;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.contactus .box .two a.number {
+    font-size: 25px;
+    color: #060616;
+    transition: .3s;
+    text-decoration: none;
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.contactus .box .two a.bottom {
+    color: #060616;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.contactus .box .two p.media {
+    color: #060616;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.contactus .box .two .icon {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.contactus .box .two .icon .i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.contactus .box .two .icon .i i.fa-brands {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transition: .1s;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #060616;
+}
+
+.contactus .box .two .icon .i i.fa-brands:hover {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: .1s;
+}
+
+.contactus iframe {
+    width: 100%;
+}
+
+@media(max-width:991px) {
+    .contactus {
+        padding-top: 60px;
+    }
+
+    .contactus .box {
+        flex-direction: column;
+    }
+
+    .contactus .box .one,
+    .contactus .box .two {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:767px) {
+    .contactus .box .two {
+        padding: 30px;
+    }
+
+    .contactus .box .two a.top {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+}
+
+@media(max-width:575px) {
+    .contactus .box .two {
+        padding: 30px;
+    }
+
+    .contactus .box .two h1.top,
+    .contactus .box .two p.media {
+        font-size: 25px;
+    }
+
+    .contactus .box .two p.media {
+        padding: 10px 0px;
+    }
+
+    .contactus .box .two form input {
+        padding: 10px 0px;
+    }
+
+    .contactus .box .two p.top,
+    .contactus .box .two p.title,
+    .contactus .box .two p.bottom {
+        font-size: 16px;
+    }
+
+    .contactus .box .two a.email,
+    .contactus .box .two a.number {
+        font-size: 20px;
+    }
+
+    .contactus .box .two p.title {
+        padding-top: 3px;
+    }
+
+    .contactus .box .two a.number {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .contactus .box .two form a.contact {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contactus .box .two a.top {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contactus .box .two a.top svg {
+        font-size: 25px;
+    }
+}

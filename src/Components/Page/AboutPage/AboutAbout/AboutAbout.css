@@ -1,0 +1,180 @@
+.aboutabout {
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.aboutabout p.top {
+    font-size: 18px;
+    /* line-height: 26px; */
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.aboutabout h1.top {
+    font-size: 50px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    padding-bottom: 70px;
+}
+
+
+.aboutabout .col-lg-4 .box {
+    background: #060616 url('../../../../Assisstest/img/about\ foto1.png') no-repeat center / cover;
+}
+
+.aboutabout .box {
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+    position: relative;
+}
+
+.aboutabout .box .foto {
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    width: 50%;
+    border: 2px solid #fe9e3f;
+    border-radius: 10px;
+    background: #fe9e3f;
+}
+
+.aboutabout .box .foto img {
+    width: 100%;
+    padding-bottom: 0px;
+    border-radius: 10px;
+}
+
+:where(.css-dev-only-do-not-override-142vneq).ant-image,
+:where(.css-dev-only-do-not-override-142vneq).ant-image .ant-image-mask {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.aboutabout .box img {
+    width: 60px;
+    padding-bottom: 50px;
+}
+
+.aboutabout .box p.number {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.aboutabout .box p.title {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.aboutabout .box p.bottom {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+.aboutabout .row:nth-child(2) {
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.aboutabout .row.row:nth-child(2) img {
+    height: 450px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid #060616;
+    object-fit: fill;
+}
+
+@media(max-width:1199px) {
+    .aboutabout .box p.number {
+        font-size: 30px;
+    }
+
+    .aboutabout .box p.title {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:991px) {
+    .aboutabout h1.top {
+        padding-bottom: 40px;
+    }
+
+    .aboutabout .row {
+        grid-row-gap: 30px;
+    }
+    .aboutabout .box .foto{
+        width: 200px;
+        right: -10px;
+        top: -10px;
+    }
+    .aboutabout .row:nth-child(2) .col-lg-4{
+        width: 50%;
+    }
+}
+
+@media(max-width:767px) {
+    .aboutabout h1.top {
+        font-size: 40px;
+        padding-bottom: 0px;
+    }
+    .aboutabout .box .foto{
+        right: -5px;
+        top: -20px;
+    }
+    .aboutabout .box p.title{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:575px) {
+    .aboutabout {
+        padding: 50px 0px;
+    }
+
+    .aboutabout h1.top {
+        font-size: 25px;
+    }
+
+    .aboutabout p.top {
+        font-size: 15px;
+    }
+
+    .aboutabout .box p.title {
+        font-size: 25px;
+    }
+
+    .aboutabout .box p.number {
+        font-size: 40px;
+        padding-bottom: 30px;
+        padding-top: 70px;
+    }
+
+    .aboutabout .box img {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .aboutabout .box .foto img{
+        padding: 0px !important;
+    }
+    .aboutabout .box .foto{
+        width: 50%;
+        top: -8px;
+    }
+    .aboutabout .row:nth-child(2) .col-lg-4{
+        width: 100%;
+    }
+}

@@ -1,0 +1,170 @@
+.aboutpeople {
+    width: 100%;
+    padding: 70px 0px;
+}
+.aboutpeople .row{
+    grid-row-gap: 50px;
+}
+.aboutpeople .box {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 15px;
+}
+
+.aboutpeople .box img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* .aboutpeople .box p.name {
+    margin-bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #060616;
+    font-size: 26px;
+} */
+
+/* .aboutpeople .box p.title {
+    margin-bottom: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: #060616;
+}
+
+.aboutpeople .box .icon {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutpeople .box .icon i.fa-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0d0d0d47;
+    border-radius: 50%;
+    color: #0d0d0d47;
+} */
+
+.aboutpeople .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutpeople .box:hover .box-hover {
+    cursor: pointer;
+    transition: .5s;
+    bottom: 0px;
+}
+
+.aboutpeople .box-hover {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    left: 0px;
+    padding: 0px 5px;
+    transition: .5s;
+    background: #fe9e3f;
+    border-radius: 15px;
+}
+
+.aboutpeople .box-hover p.hover-name {
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+}
+
+/* .aboutpeople .box-hover p.hover-title {
+    margin-bottom: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.aboutpeople .box-hover .icon i.fa-brands {
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}
+
+.aboutpeople .box-hover .icon i.fa-brands:hover {
+    cursor: pointer;
+    background: white;
+    color: #fe9e3f;
+    transition: .3s;
+} */
+
+.aboutpeople .box-hover p.bottom {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+@media(max-width:1199px){
+    .aboutpeople .box-hover p.hover-name,
+    .aboutpeople .box .icon{
+        padding: 10px 0px;
+    }
+    .aboutpeople .box-hover p.hover-name{
+        font-size: 18px;
+    }
+    .aboutpeople .box .icon i.fa-brands{
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .aboutpeople .box-hover{
+        padding: 0px 5px;
+    }
+}
+
+@media(max-width:991px){
+    .aboutpeople .row .col-lg-3{
+        width: 50%;
+    }
+    .aboutpeople .box-hover{
+        padding: 0px 30px;
+    }
+    .aboutpeople .box-hover p.hover-name{
+       padding-top: 50px;
+    }
+}
+
+@media(max-width:767px){
+    .aboutpeople{
+        padding: 50px 0px;
+    }
+    .aboutpeople .box-hover p.hover-name{
+        padding-top: 30px;
+     }
+}
+@media(max-width:575px){
+    .aboutpeople .box img{
+        height: 400px;
+    }
+    .aboutpeople .row .col-lg-3{
+        width: 100%;
+    }
+    .aboutpeople .box-hover p.hover-name{
+        padding-top: 50px;
+     }
+     .aboutpeople .row{
+        grid-gap: 30px;
+     }
+     .aboutpeople .box-hover p.hover-name{
+        font-size: 20px;
+        padding-bottom: 0px;
+     }
+}

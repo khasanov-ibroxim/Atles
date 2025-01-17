@@ -1,0 +1,77 @@
+section.our{
+    width: 100%;
+    background: black url('../../Assisstest/img/backgrounf.png') no-repeat center / cover;
+    background-attachment: fixed;
+    padding: 50px 0px 70px 0px;
+}
+section.our p.top{
+    font-size: 18px;
+    /* line-height: 26px; */
+    font-weight: 500;
+    color: #fe9e3f;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+section.our h1.top{
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+section.our h1.top img{
+    border-radius: 50px;
+}
+
+
+@media(max-width:991px){
+    section.our h1.top{
+        font-size: 40px;
+    }
+    section.our h1.top img:nth-child(1){
+        width: 60px;
+    }
+    section.our h1.top img:nth-child(3),
+    section.our h1.top img:nth-child(4){
+        width: 150px;
+    }
+}
+
+@media(max-width:767px){
+    section.our h1.top{
+        font-size: 30px;
+    }
+    section.our h1.top img:nth-child(1){
+        width: 50px;
+    }
+    section.our h1.top img:nth-child(3),
+    section.our h1.top img:nth-child(4){
+        width: 110px;
+    }
+    
+}
+
+@media(max-width:575px){
+    section.our{
+        padding: 30px 0px;
+    }
+    section.services p.top{
+        font-size: 15px;
+    }
+    section.our h1.top{
+        font-size: 25px;
+    }
+    section.our h1.top img:nth-child(1){
+        width: 30px;
+    }
+    section.our h1.top img:nth-child(3),
+    section.our h1.top img:nth-child(4){
+        width: 80px;
+    }
+    section.our p.top{
+        font-size: 15px;
+        padding-bottom: 10px;   
+    }
+
+}

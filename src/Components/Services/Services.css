@@ -1,0 +1,227 @@
+section.services {
+    width: 100%;
+    padding: 70px 0px;
+    background: black url('../../Assisstest/img/backgrounf.png') no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+section.services p.top {
+    font-size: 18px;
+    /* line-height: 26px; */
+    font-weight: 500;
+    color: #fe9e3f;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section.services h1.top {
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    padding-bottom: 70px;
+}
+
+section.services .title {
+    display: grid;
+    grid-gap: 50px;
+}
+
+section.services .title .box {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+    padding: 70px 0px;
+    background: #fe9e3f;
+    z-index: 11;
+    border-top: 1px solid rgba(0, 0, 0, .8);
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+}
+
+section.services .title .box .foto {
+    position: absolute;
+    top: -150px;
+    left: 100px;
+    bottom: -150px;
+    transition: .3s;
+    display: none;
+}
+
+section.services .title .box:hover .foto {
+    cursor: pointer;
+    display: block;
+    transition: .3s;
+}
+
+section.services .title .box .foto img {
+    width: 700px;
+    height: 100%;
+    border-radius: 350px;
+    background: rgba(0, 0, 0, .4);
+}
+
+section.services .title .box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    top: 0px;
+    left: 0px;
+    background: black url('../../Assisstest/img/backgrounf.png') no-repeat center / cover;
+    transition: .3s;
+    background-attachment: fixed;
+}
+
+section.services .title .box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    background: black url('../../Assisstest/img/backgrounf.png') no-repeat center / cover;
+    background-attachment: fixed;
+    bottom: 0px;
+    transition: .3s;
+}
+
+section.services .title .box:hover::before {
+    cursor: pointer;
+    transition: .3s;
+    top: -55%;
+}
+
+section.services .title .box:hover::after {
+    cursor: pointer;
+    transition: .3s;
+    bottom: -55%;
+}
+
+section.services .title .box .bottom {
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+    margin-right: 20px;
+}
+
+
+section.services .title .box p.one {
+    z-index: 1;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+}
+
+section.services .title .box:hover .bottom svg {
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: .3s;
+}
+
+section.services .title .box .bottom p.two {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0px;
+    font-weight: 600;
+    width: 420px;
+
+
+}
+
+section.services .title .box:hover .bottom p.two {
+    cursor: pointer;
+    transition: .3s;
+    z-index: 11;
+}
+
+section.services .title .box svg {
+    z-index: 1;
+    font-size: 50px;
+    transition: .3s;
+}
+
+
+@media(max-width:991px){
+    section.services .title .box p.one{
+        font-size: 30px;
+    }
+    section.services .title .box .foto{
+        left: 20px;
+        right: 20px;
+    }
+    section.services .title .box .foto img{
+        width: 100%;
+    }
+    section.services .title .box:hover .bottom p.two{
+        font-size: 15px;
+    }
+    section.services .title .box p.one{
+        margin-left: 80px;
+    }
+}
+
+@media(max-width:767px){
+    section.services .title .box p.one{
+        font-size: 20px;
+    }
+    section.services .title .box svg{
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:575px){
+    section.services h1.top{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    section.services .title .box p.one{
+        font-size: 20px;
+        text-align: center;
+    }
+    section.services{
+        padding: 50px 0px;
+    }
+    section.services .title .box{
+        flex-direction: column;
+        grid-gap: 10px;
+        padding: 20px;
+    }
+    section.services .title .box .bottom{
+        flex-direction: column;
+        grid-gap: 10px;
+        z-index: 1;
+        text-align: center;
+    }
+    section.services .title{
+        grid-gap: 30px;
+    }
+    section.services .title .box:hover .bottom p.two{
+        text-align: center;
+        font-size: none;
+    }
+    section.services .title .box .bottom p.two{
+        font-size: 14px;
+    }
+    section.services .title .box .foto{
+        position: unset;
+        display: unset;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section.services .title .box .foto img{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    section.services .title .box::after{
+        z-index: -1;
+    }
+}

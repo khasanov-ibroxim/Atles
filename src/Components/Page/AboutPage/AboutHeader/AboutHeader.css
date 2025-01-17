@@ -1,0 +1,96 @@
+.aboutheader{
+    width: 100%;
+    background: black url('../../../../Assisstest/img/aboutbackground.png') no-repeat center / cover;
+    padding: 210px 0px 70px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutheader::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 .25em .325em #fe9e3f;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+    font-size: 600px;
+}
+.aboutheader h1.top{
+    font-size: 77px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.aboutheader .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+.aboutheader .box img{
+    width: 200px;
+}
+.aboutheader .box .text{
+display: grid;
+grid-gap: 5px;
+}
+.aboutheader .box .text p.top{
+    font-size: 26px;
+    margin-bottom: 0px;
+    color: white;
+}
+.aboutheader .box .text a.number{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    transition: .3s;
+}
+.aboutheader .box .text a.number:hover{
+    cursor: pointer;
+    transition: .3s;
+    color: #fe9e3f;
+}
+
+
+@media(max-width:991px){
+    .aboutheader{
+        padding-top: 170px;
+    }
+    .aboutheader h1.top{
+        font-size: 60px;
+    }
+}
+@media(max-width:767px){
+    .aboutheader h1.top{
+        font-size: 55px;
+    }
+    .aboutheader .box .text a.number{
+        font-size: 35px;
+    }
+}
+@media(max-width:575px){
+    .aboutheader{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .aboutheader h1.top{
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .aboutheader .box img{
+        display: none;
+    }
+    .aboutheader .box .text p.top{
+        font-size: 24px;
+    }
+    .aboutheader .box .text a.number{
+        font-size: 30px;
+        text-align: center;
+    }
+}

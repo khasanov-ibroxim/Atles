@@ -1,0 +1,80 @@
+section.textile{
+    width: 100%;
+    padding: 100px 0px;
+}
+section.textile h5{
+    font-size: 18px;
+    /* line-height: 26px; */
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+section.textile .row{
+    align-items: flex-end;
+}
+section.textile h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #060616;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+section.textile .bigcard{
+    box-shadow:  0 0 70px rgb(205, 205, 205);
+    border-radius: 20px;
+    margin-top: 15px;
+}
+section.textile .bigcard .cardin{
+    padding: 20px;
+}
+section.textile .bigcard .cardin h3{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+section.textile .bigcard .cardin p.text{
+    font-size: 17px;
+    color: black;
+    opacity: 0.8;
+}
+section.textile .col-lg-6{
+    height: 100% !important;
+}
+section.textile img {
+    border-radius: 25px;
+    height: 543px;
+    width: 100%;
+}
+
+
+@media(max-width:991px){
+    section.textile h5,
+    section.textile h1{
+        text-align: center;
+    }
+    section.textile .row{
+        grid-row-gap: 40px;
+    }
+    section.textile img{
+        width: 100%;
+    }
+}
+
+@media(max-width:575px){
+    section.textile h5{
+        font-size: 15px;
+    }
+    section.textile{
+        padding: 50px 0px;
+    }
+    section.textile h1{
+        font-size: 30px;
+    }
+    section.textile .bigcard{
+        text-align: center;
+        box-shadow: 2px 2px 70px rgb(205, 205, 205);
+    }
+}

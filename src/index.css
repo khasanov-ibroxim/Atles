@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img,
+svg,
+video{
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+body{
+  font-family: "Syne", sans-serif !important;
+}

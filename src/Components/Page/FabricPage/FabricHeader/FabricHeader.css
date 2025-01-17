@@ -1,0 +1,73 @@
+.fabricHeader{
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow:hidden;
+    background: #060616 url('../../../../Assisstest/img/fabricHeader.png') no-repeat center / cover;
+}
+
+.fabricHeader::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 .25em .325em #fe9e3f;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+    font-size: 600px;
+}
+
+
+.fabricHeader h1.top{
+    font-size: 77px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+.fabricHeader .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3px;
+    color: white;
+}
+.fabricHeader .bottom a:last-of-type{
+    color: white;
+}
+.fabricHeader .bottom a{
+    text-decoration: none;
+    color: #ffffffa6;
+    font-size: 16px;
+    transition: .3s;
+}
+.fabricHeader .bottom a:hover{
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+@media(max-width:991px){
+    .fabricHeader h1.top{
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:575px){
+    .fabricHeader h1.top{
+        font-size: 45px;
+        padding-top: 35px;
+    }
+    .fabricHeader .bottom a{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .fabricHeader {
+        padding-bottom: 80px;
+    }
+}
