@@ -40,7 +40,7 @@ const resources = {
                 contact: "Contacts",
             },
             footer:{},
-            contacts:"Contacts"
+            contacts:""
         }
     },
 };
