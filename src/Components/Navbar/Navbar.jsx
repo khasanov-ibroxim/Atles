@@ -8,6 +8,7 @@ import {Dropdown, Space} from "antd";
 import {languages} from "../../lang/langs.jsx";
 import {useTranslation} from "react-i18next";
 import {useLanguage} from "../../lang/LangContext.jsx";
+import {DownOutlined, MenuOutlined} from "@ant-design/icons";
 
 export default function Navbar({onlyIcon = true}) {
     const [show, setShow] = useState(false)
@@ -47,6 +48,9 @@ export default function Navbar({onlyIcon = true}) {
                                     </div>
                                 </li>
 
+                                <li>
+                                    <Link className='a-text' to='/contact'>Контакты</Link>
+                                </li>
                                 <li className={"nav_dropdown"}>
                                     <Dropdown
                                         menu={{
@@ -72,21 +76,20 @@ export default function Navbar({onlyIcon = true}) {
                                         </a>
                                     </Dropdown>
                                 </li>
-
-                                <li>
-                                    <Link className='a-text' to='/contact'>Контакты</Link>
-                                </li>
                             </ul>
 
-                            <div className="box-right">
-                                <LocalPhoneIcon/>
-                                <div className="text">
-                                    <a href="tel:+998941582000" className="number">+998 (94) 158-20-00</a></div>
-                            </div>
-                            <button className='right' onClick={() => navigate("/contact")}>Cвяжитесь <NorthEastIcon/>
-                            </button>
+
+                                <div className="box-right">
+                                    <LocalPhoneIcon/>
+                                    <div className="text">
+                                        <a href="tel:+998941582000" className="number">+998 (94) 158-20-00</a></div>
+                                </div>
+
+
                         </div>
-                        <i onClick={() => setShow(!show)} className="bars fa-solid fa-bars"></i>
+                        <MenuOutlined
+                            className={"bars fa-solid fa-bars"}
+                            onClick={() => setShow(!show)} style={{color: "white"}}/>
                     </div>
                 </div>
             </div>

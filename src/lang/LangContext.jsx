@@ -6,24 +6,26 @@ const LangContext = createContext();
 
 const LanguageProvider = ({ children }) => {
     const [selectedLanguage, setSelectedLanguage] = useState(() => {
-        const initialLanguage =
+        const initialLanguageKey =
             localStorage.getItem("selectedLanguage") || languages[0].key;
-        return languages.find((lang) => lang.key === initialLanguage);
+        return languages.find((lang) => lang.key === initialLanguageKey);
     });
 
     const handleLanguageChange = (value) => {
-
-        setSelectedLanguage(languages[value.key]);
-        const lang_code = languages[value.key].code;
-        i18n.changeLanguage(lang_code);
-        localStorage.setItem("selectedLanguage", languages[value.key].key);
+        const newLanguage = languages.find((lang) => lang.key === value.key);
+        if (newLanguage) {
+            setSelectedLanguage(newLanguage);
+            i18n.changeLanguage(newLanguage.code);
+            localStorage.setItem("selectedLanguage", newLanguage.key);
+        } else {
+            console.error("Language not found for key:", value.key);
+        }
     };
 
     return (
         <LangContext.Provider
             value={{
                 selectedLanguage,
-                setSelectedLanguage,
                 handleLanguageChange,
             }}
         >
