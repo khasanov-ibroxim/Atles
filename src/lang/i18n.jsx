@@ -22,22 +22,7 @@ const resources = {
                 contact: "Контакты",
             },
 
-            footer: {
-                item_1:"Остались вопросы или нужна дополнительная информация? Мы всегда открыты для общения.",
-                item_2:{
-                    title:"Меню",
-                    home: "Главная",
-                    about: "О нас",
-                    products: "Продукция",
-                    contact: "Контакты",
-                },
-                item_3:{
-                    h3:"НАША ПОЧТА",
-                    p:"На связи с вами",
-                    link:"Отправить сообщение"
-                }
-            },
-
+            footer:{},
             contacts:"Контакты"
         },
     },
@@ -54,22 +39,7 @@ const resources = {
                 products: "Products",
                 contact: "Contacts",
             },
-            footer: {
-                item_1:"Still have questions or need additional information? We are always open for communication.",
-                item_2:{
-                    title:"Menu",
-                    home: "Home",
-                    about: "About Us",
-                    products: "Product",
-                    contact: "Contacts",
-                },
-                item_3:{
-                    h3:"OUR MAIL",
-                    p:"In touch with you",
-                    link:"Send a message"
-                }
-            },
-
+            footer:{},
             contacts:"Contacts"
         }
     },
