@@ -1,5 +1,5 @@
 import React from "react";
-import "./award.css";
+import "./Award.css";
 import { useTranslation } from "react-i18next";
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import BoltIcon from "@mui/icons-material/Bolt";
