@@ -1,37 +1,38 @@
 import React, { useEffect, useState, useRef } from 'react'
 import './Why.css'
 import star from '../../Assisstest/img/star.png'
+import {useTranslation} from "react-i18next";
 export default function Why() {
+    const {t} = useTranslation()
     return (
         <section className='why'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        {/* <p className="top">//Бизнес-бустWhy us</p> */}
-                        <h1 className="top">ОБЪЁМ ПРОИЗВОДСТВА И ЭКСПОРТ</h1>
+                        <h1 className="top">{t("home.why.title")}</h1>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="box">
-                            <p className="number">2500-8000</p>
-                            <p className="title">Единиц в день</p>
-                            <p className="bottom">Разнообразие продукции и производственные объемы</p>
+                            <p className="number">{t("home.why.item_1.number")}</p>
+                            <p className="title">{t("home.why.item_1.title")}</p>
+                            <p className="bottom">{t("home.why.item_1.bottom")}</p>
                         </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="box">
-                            <p className="number">98,7%</p>
-                            <p className="title">Экспортная направленность</p>
-                            <p className="bottom">Мы обеспечиваем международные поставки и стремимся расширять географию наших клиентов, предлагая конкурентоспособную продукцию</p>
+                            <p className="number">{t("home.why.item_2.number")}</p>
+                            <p className="title">{t("home.why.item_2.title")}</p>
+                            <p className="bottom">{t("home.why.item_2.bottom")}</p>
                         </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="box">
-                            <p className="number">2 миллиарда</p>
-                            <p className="title">сум Ежемесячный объем производства</p>
-                            <p className="bottom">Это подтверждает высокий уровень <br/>нашей производственной мощности и стабильность финансовых показателей</p>
+                            <p className="number">{t("home.why.item_3.number")}</p>
+                            <p className="title">{t("home.why.item_2.title")}</p>
+                            <p className="bottom">{t("home.why.item_3.bottom")}</p>
                         </div>
                     </div>
                 </div>
@@ -39,18 +40,18 @@ export default function Why() {
             <div className="carousel">
                 <div className="logo-slider">
                     <div className="logos-slide">
-                        <div className="logos-slide_item">Лучшее качество <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Стабильность <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Дизайн <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Отвтетственность <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Лучшее качество <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Стабильность <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Дизайн <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Отвтетственность <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Лучшее качество <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Стабильность <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Дизайн <img src={star} alt=""/></div>
-                        <div className="logos-slide_item">Отвтетственность <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_1")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_2")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_3")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_4")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_1")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_2")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_3")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_4")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_1")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_2")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_3")} <img src={star} alt=""/></div>
+                        <div className="logos-slide_item">{t("home.why.slide_4")} <img src={star} alt=""/></div>
 
                     </div>
                 </div>

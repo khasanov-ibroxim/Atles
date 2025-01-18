@@ -8,64 +8,65 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
     const navigate = useNavigate();
-
+    const {t} = useTranslation();
     return (
         <footer>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <h1 className="top">Пишите, Задавайте Вопросы, Делитесь Идеями!<CommentIcon /></h1>
-                        <button className="right" onClick={()=>navigate("/contact")}>Контакты <NorthEastIcon /></button>
+                        <h1 className="top">{t("footer.title_top")}<CommentIcon /></h1>
+                        <button className="right" onClick={()=>navigate("/contact")}>{t("contacts")} <NorthEastIcon /></button>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-auto">
-                        <p className="menu">Меню</p>
+                        <p className="menu">{t("footer.menu.title")}</p>
                         <ul>
                             <li>
-                                <Link to='/'>Главная</Link>
+                                <Link to='/'>{t("footer.menu.item_1")}</Link>
                             </li>
                             <li>
-                                <Link to='/about'>О нас</Link>
+                                <Link to='/about'>{t("footer.menu.item_2")}</Link>
                             </li>
                             <li>
-                                <Link to='/contact'>Контакты</Link>
+                                <Link to='/contact'>{t("footer.menu.item_3")}</Link>
                             </li>
                         </ul>
                     </div>
                     <div className="col-auto">
-                        <p className="menu">Производство</p>
+                        <p className="menu">{t("footer.fabric.title")}</p>
                         <ul>
                             <li>
                                 <Link to={"/:id/fabric".replace(":id" , 2)}
                                     // onClick={()=>{window.scrollTop}}
                                 >
-                                    <>Раскройный цех</>
+                                    {t("footer.fabric.item_1")}
                                 </Link>
                             </li>
                             <li>
                                 <Link to={"/:id/fabric".replace(":id" , 1)} >
-                                    <>Швейный цех</>
+                                    {t("footer.fabric.item_2")}
                                 </Link>
                             </li>
                             <li>
                                 <Link to={"/:id/fabric".replace(":id" , 4)} >
-                                    <>Контроль качества</>
+                                    {t("footer.fabric.item_3")}
                                 </Link>
                             </li>
                             <li>
                                 <Link to={"/:id/fabric".replace(":id" , 3)} >
-                                    <>Гладильно упаковочный цех</>
+                                    {t("footer.fabric.item_4")}
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div className="col-auto">
-                        <p className="menu">Контакты</p>
-                        <a href={"mailto:atlestextile@gmail.com"} className="bottom">Отправить сообщение <MailOutlineIcon /> </a>
+                        <p className="menu">{t("contacts")}</p>
+                        <a href={"mailto:atlestextile@gmail.com"} className="bottom">{t("footer.contacts_text")} <MailOutlineIcon /> </a>
                         <div className="text-top">
                             <a href="tel:+998940287200" className="number">+998(94)028-72-00</a>
                             <a href="tel:+998941387200" className="number">+998(94)138-72-00</a>
@@ -73,34 +74,12 @@ export default function Footer() {
                             <a href="tel:+998951204111" className="number">+998(95)120-41-11</a>
                         </div>
                     </div>
-                    {/* <div className="col-auto">
-                        <p className="menu">Popular updates</p>
-                        <div className="box-bottom">
-                            <div className="box">
-                                <img src={foto1} alt="" />
-                                <div className="text">
-                                    <a href='#!' className="right">Can textiles lead the way<br />during the pandemic?</a>
-                                    <p className="right">March 18, 2021</p>
-                                </div>
-                            </div>
-                            <div className="box">
-                                <img src={foto2} alt="" />
-                                <div className="text">
-                                    <a href="#!" className="right">The Story of a Silk Lends<br />Cotton like...</a>
-                                    <p className="right">March 9, 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
+
                     <div className="col-auto">
-                        <p className="menu">Адрес</p>
-                        <p className="adres">
-                            Узбекистан г.Наманган <br/>
-                            Попский район <br/>
-                            Улица Чинор, дом 113
-                        </p>
+                        <p className="menu">{t("footer.address_title")}</p>
+                        <p className="adres" dangerouslySetInnerHTML={{__html:t("footer.address")}}></p>
                         <div className="col-auto">
-                            <p className="menu">Интернет ресурсы</p>
+                            <p className="menu">{t("footer.social")}</p>
                             <ul className={"footer_social"}>
                                 <li>
                                     <a href="#!"><FacebookIcon/></a>

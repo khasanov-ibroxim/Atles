@@ -25,31 +25,31 @@ export default function Navbar({onlyIcon = true}) {
                         <div className={show ? 'null' : 'box'}>
                             <ul>
                                 <li>
-                                    <Link className='a-text' to='/'>Главная</Link>
+                                    <Link className='a-text' to='/'>{t("navbar.home")}</Link>
                                 </li>
                                 <li>
-                                    <Link className='a-text' to='/about'>О нас</Link>
+                                    <Link className='a-text' to='/about'>{t("navbar.about")}</Link>
                                 </li>
                                 <li className="dropdown_box">
-                                    <div className="dropdown_btn">Производство</div>
+                                    <div className="dropdown_btn">{t("navbar.production")}</div>
                                     <div className="dropdown_menu_box">
                                         <Link to={"/:id/fabric".replace(":id", 2)} className="dropdown_menu_item">
-                                            <>Раскройный цех</>
+                                            {t("navbar.fabric.item_1")}
                                         </Link>
                                         <Link to={"/:id/fabric".replace(":id", 1)} className="dropdown_menu_item">
-                                            <>Швейный цех</>
+                                            {t("navbar.fabric.item_2")}
                                         </Link>
                                         <Link to={"/:id/fabric".replace(":id", 4)} className="dropdown_menu_item">
-                                            <>Контроль качества</>
+                                            {t("navbar.fabric.item_3")}
                                         </Link>
                                         <Link to={"/:id/fabric".replace(":id", 3)} className="dropdown_menu_item">
-                                            <>Гладильно упаковочный цех</>
+                                            {t("navbar.fabric.item_4")}
                                         </Link>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <Link className='a-text' to='/contact'>Контакты</Link>
+                                    <Link className='a-text' to='/contact'>{t("navbar.contact")}</Link>
                                 </li>
                                 <li className={"nav_dropdown"}>
                                     <Dropdown

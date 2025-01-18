@@ -6,15 +6,17 @@ import foto2 from '../../Assisstest/img/foto2.jpg'
 import foto3 from '../../Assisstest/img/foto3.jpg'
 import foto4 from '../../Assisstest/img/foto4.jpg'
 import {Link} from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 export default function Services() {
+    const {t} = useTranslation();
     return (
         <section className="services">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <p className="top">//От идеи до готового изделия</p>
-                        <h1 className="top">Открой для себя, как текстиль может изменить стиль!</h1>
+                        <p className="top" >{t("home.services.title_p")}</p>
+                        <h1 className="top">{t("home.services.title_h1")}</h1>
                     </div>
                 </div>
             </div>
@@ -23,11 +25,9 @@ export default function Services() {
                     <div className="foto">
                         <img src={foto1} alt=""/>
                     </div>
-                    <p className="one">01 - Швейный<br/>цех</p>
+                    <p className="one" dangerouslySetInnerHTML={{ __html: t("home.services.item_1.one") }}></p>
                     <div className="bottom">
-                        <p className="two">
-                            Оснащён современным оборудованием <br/>и высококвалифицированным персоналом.
-                        </p>
+                        <p className="two" dangerouslySetInnerHTML={{ __html: t("home.services.item_1.two") }}></p>
                         <NorthEastIcon/>
                     </div>
                 </Link>
@@ -35,13 +35,9 @@ export default function Services() {
                     <div className="foto">
                         <img src={foto2} alt=""/>
                     </div>
-                    <p className="one">02 - Раскройный<br/>цех</p>
+                    <p className="one" dangerouslySetInnerHTML={{ __html: t("home.services.item_2.one") }}></p>
                     <div className="bottom">
-                        <p className="two">
-                            Оснащён передовыми технологиями <br/> и высокоточными машинами,<br/> обеспечивающими
-                            точность и
-                            скорость раскроя <br/> тканей для дальнейшего производства
-                        </p>
+                        <p className="two" dangerouslySetInnerHTML={{ __html: t("home.services.item_2.two") }}></p>
                         <NorthEastIcon/>
                     </div>
                 </Link>
@@ -49,12 +45,9 @@ export default function Services() {
                     <div className="foto">
                         <img src={foto3} alt=""/>
                     </div>
-                    <p className="one">03 - Гладильно<br/>упаковочный цех</p>
+                    <p className="one" dangerouslySetInnerHTML={{ __html: t("home.services.item_3.one") }}></p>
                     <div className="bottom">
-                        <p className="two">
-                            Оснащён современным оборудованием для <br/> качественной глажки и аккуратной <br/> упаковки
-                            готовых изделий
-                        </p>
+                        <p className="two" dangerouslySetInnerHTML={{ __html: t("home.services.item_3.two") }}></p>
                         <NorthEastIcon/>
                     </div>
                 </Link>
@@ -62,12 +55,9 @@ export default function Services() {
                     <div className="foto">
                         <img src={foto4} alt=""/>
                     </div>
-                    <p className="one">04 - Контроль<br/>качества</p>
+                    <p className="one" dangerouslySetInnerHTML={{ __html: t("home.services.item_4.one") }}></p>
                     <div className="bottom">
-                        <p className="two">
-                            Включает многократные проверки на каждом <br/> этапе производства, гарантируя высокие стандарты
-                            <br/> продукции и соответствие международным требованиям
-                        </p>
+                        <p className="two" dangerouslySetInnerHTML={{ __html: t("home.services.item_4.two") }}></p>
                         <NorthEastIcon/>
                     </div>
                 </Link>

@@ -1,9 +1,6 @@
 import React from 'react'
 import './FabricSection.css'
-import fabricSection from '../../../../Assisstest/img/fabricsection.jpg'
-import foto1 from '../../../../Assisstest/img/fabric1.jpg'
-import foto2 from '../../../../Assisstest/img/fabric2.jpg'
-import foto3 from '../../../../Assisstest/img/fabric3.jpg'
+
 import CheckIcon from '@mui/icons-material/Check';
 
 import shveyniy_1 from "../../../../Assisstest/fabric/1/shveyniy_1.jpg"

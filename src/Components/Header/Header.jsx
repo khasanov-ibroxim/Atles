@@ -3,10 +3,7 @@ import './Header.css'
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import foto from '../../Assisstest/img/header title.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import starp from '../../Assisstest/img/starp.png'
-// import morgip from '../../Assisstest/img/margib.png'
-// import desion from '../../Assisstest/img/desion.png'
-// import creation from '../../Assisstest/img/creation.png'
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -14,7 +11,10 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import {useTranslation} from "react-i18next";
 export default function Header() {
+  const {t} = useTranslation();
+
   return (
     <header>
       <div className="header-title">
@@ -22,12 +22,13 @@ export default function Header() {
           <div className="row">
             <div className="col-lg-12">
               <h1 className="top">
-               ДОБРО <img src={foto} alt="" /> <br />
-               ПОЖАЛОВАТЬ В <br/>МИР ТЕКСТИЛЯ!
+
+                {t("home.header.welcome")} <img src={foto} alt="" /> <br />
+                {t("home.header.br_1")}<br/>{t("home.header.br_2")}
               </h1>
               <div className="box-bottom">
-                <a href="#!"><NorthEastIcon />Создаём <br /> вдохновляем</a>
-                <p className="bottom">Вдохновляйтесь качественными трикотажными изделиями, созданными с любовью и мастерством. Мы — команда, которая превращает ткани в шедевры, чтобы каждая деталь вашей жизни была красивой и комфортной.</p>
+                <a href="#!"><NorthEastIcon />{t("home.header.bottom_btn")} <br /> {t("home.header.bottom_btn2")}</a>
+                <p className="bottom">{t("home.header.bottom_text")}</p>
               </div>
 
               <div className="corusel">

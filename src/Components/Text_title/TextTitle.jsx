@@ -1,32 +1,30 @@
 import React from 'react'
 import './TextTitle.css'
 import textile from '../../Assisstest/img/textitle.jpg'
+import {useTranslation} from "react-i18next";
 export default function TextTitle() {
+    const {t} = useTranslation()
     return (
         <section className="textile">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h5>//Шьем с любовью и мастерством</h5>
-                        <h1>ДИНАМИЧНО РАЗВИВАЮЩАЯ КОМПАНИЯ С БОЛЬШИМ ПОТЕНЦИАЛОМ</h1>
+                        <h5>{t("home.text_title.title_h5")}</h5>
+                        <h1>{t("home.text_title.title_h1")}</h1>
                         <div className="bigcard">
                             <div className="cardin">
                                 <div className="top">
-                                    <h3>Сильная команда профессионалов</h3>
-                                    <p className="text">
-                                        Наши сотрудники — основа нашего успеха. В компании работает 250 квалифицированных специалистов, каждый из которых вносит свой вклад в развитие нашей компании.</p>
+                                    <h3>{t("home.text_title.item_1.h3")}</h3>
+                                    <p className="text">{t("home.text_title.item_1.p")}</p>
                                 </div>
                                 <div className="center">
-                                    <h3>Большое пространство для качественного производства</h3>
-                                    <p className="text">
-                                        Наши производственные мощности обеспечивают все условия для выполнения заказов и производственных процессов.
-                                        Общая площадь производства составляет 2800 квадратных метров.</p>
+                                    <h3>{t("home.text_title.item_2.h3")}</h3>
+                                    <p className="text">{t("home.text_title.item_2.p")}</p>
                                 </div>
                                 <div className="bottom">
                                     <div className="center">
-                                        <h3>Путь от старта до успеха</h3>
-                                        <p className="text">
-                                            С момента своего основания в первой половине 2023 года наша компания быстро развивалась благодаря инновационному подходу и высокому уровню профессионализма нашей команды.</p>
+                                        <h3>{t("home.text_title.item_3.h3")}</h3>
+                                        <p className="text">{t("home.text_title.item_3.p")}</p>
                                     </div>
                                 </div>
 
