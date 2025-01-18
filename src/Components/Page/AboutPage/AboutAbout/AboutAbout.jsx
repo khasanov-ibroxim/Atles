@@ -7,17 +7,19 @@ import ser3 from '../../../../Assisstest/img/ser3.png'
 import ser4 from '../../../../Assisstest/img/ser4.png'
 import ser5 from '../../../../Assisstest/img/ser5.png'
 import { Image } from 'antd'
+import {useTranslation} from "react-i18next";
 export default function AboutAbout() {
+  const {t} = useTranslation()
   return (
     <section className='aboutabout'>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <p className="top">
-                //о нас
+              {t("about.about.top")}
             </p>
             <h1 className="top">
-              ПРОФЕССИОНАЛИЗМ, КАЧЕСТВО И ИННОВАЦИИ
+              {t("about.about.title")}
             </h1>
           </div>
           <div className="col-lg-4">
@@ -33,13 +35,13 @@ export default function AboutAbout() {
                 </Image.PreviewGroup>
               </div>
               <p className="number">
-                2023 год
+                {t("about.about.steps.item_1.year")}
               </p>
               <p className="title">
-                ПЕРВЫЕ ШАГИ В МИРЕ ТЕКСТИЛЯ
+                {t("about.about.steps.item_1.title")}
               </p>
               <p className="bottom">
-                Компания начала свою деятельность в первой половине 2023 года и с тех пор стремительно наращивает производственные мощности и экспортные операции.
+                {t("about.about.steps.item_1.description")}
               </p>
             </div>
 
@@ -58,10 +60,10 @@ export default function AboutAbout() {
               </div>
               <img src={foto} alt="" />
               <p className="title">
-                СЕРТИФИКАТЫ
+                {t("about.about.steps.item_2.title")}
               </p>
               <p className="bottom">
-                Мы уделяем особое внимание качеству и соответствию международным требованиям. Вся продукция сертифицирована по системе GS1 Узбекистан и имеет необходимые документы, включая «Декларацию о соответствии» и «Сертификат соответствия», полученные в Российской Федерации.
+                {t("about.about.steps.item_2.description")}
               </p>
             </div>
           </div>
@@ -78,8 +80,8 @@ export default function AboutAbout() {
                 </Image.PreviewGroup>
               </div>
               <p className="number">$</p>
-              <p className="title">НАШИ ДОСТИЖЕНИЯ</p>
-              <p className="bottom">Мы гордимся тем, что успешно сотрудничаем с ведущими странами, такими как Российская Федерация и Республика Беларусь, поставляя высококачественные текстильные изделия.</p>
+              <p className="title">{t("about.about.steps.item_3.title")}</p>
+              <p className="bottom">{t("about.about.steps.item_3.description")}</p>
             </div>
           </div>
         </div>

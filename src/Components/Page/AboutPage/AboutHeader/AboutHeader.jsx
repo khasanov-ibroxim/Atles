@@ -1,25 +1,31 @@
-import React from 'react'
-import './AboutHeader.css'
-import foto from '../../../../Assisstest/img/about strelka.png'
+import React from 'react';
+import './AboutHeader.css';
+import foto from '../../../../Assisstest/img/about strelka.png';
+import { useTranslation } from 'react-i18next';
+
 export default function AboutHeader() {
+  const { t } = useTranslation();
+
   return (
-    <div className='aboutheader'>
+      <div className='aboutheader'>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <h1 className="top">
-              МЫ СТРЕМИМСЯ К <br/>УСПЕХУ В МИРЕ одежды!
+                {t("about.aboutHeader.title")}
               </h1>
               <div className="box">
-                <img src={foto} alt="" />
+                <img src={foto} alt="strelka" />
                 <div className="text">
-                  <p className="top">О нашей компании</p>
-                  <a className='number' href="tel:+998941582000">+998 (94) 158-20-00</a>
+                  <p className="top">{t("about.aboutHeader.box.text")}</p>
+                  <a className='number' href={`tel:+998941582000`}>
+                    +998 (94) 158-20-00
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-  )
+      </div>
+  );
 }
