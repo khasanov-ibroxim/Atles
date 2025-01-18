@@ -8,129 +8,122 @@ import foto5 from '../../../../Assisstest/img/about rasm 5.jpg'
 import foto6 from '../../../../Assisstest/img/about rasm 6.jpeg'
 import foto7 from '../../../../Assisstest/img/about rasm 7.jpg'
 import foto8 from '../../../../Assisstest/img/about rasm 8.jpg'
+import {useTranslation} from "react-i18next";
+
 export default function AboutPeople() {
-    // <i class="fa-brands fa-google-plus-g"></i>
+    const {t} = useTranslation();
     return (
         <div className='aboutpeople'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto1} alt="" />
+                            <img src={foto1} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Футболка
+                                    {t("about.aboutPeople.item_1.name")}
                                 </p>
-                                <p className="bottom" style={{fontSize:"15px"}}>
-                                    Карде супрем- состав: 100% хлопок <br/>
-                                    Лайкра- состав: 95% хлопок, 5% лайкра <br/>
-                                    Пенье-состав: 92% хлопок, 8% лайкра <br/>
-                                    Меланж- состав 75% хлопок, 25% полиэстер <br/>
-                                    Расцветок 20
+                                <p className="bottom" style={{fontSize: "15px"}}
+                                dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_1.details")}}
+                                >
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto2} alt="" />
+                            <img src={foto2} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Поло футболка
+                                    {t("about.aboutPeople.item_2.name")}
                                 </p>
-                                <p className="bottom">
-                                    Пике<br/>
-                                    Состав 100% хлопок<br/>
-                                    Расцветок 10<br/>
+                                <p className="bottom"  dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_2.details")}}>
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto3} alt="" />
+                            <img src={foto3} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Майки
+                                    {t("about.aboutPeople.item_3.name")}
                                 </p>
-                                <p className="bottom">
-                                    Карде супрем<br/>
-                                    Состав: 100% хлопок<br/>
-                                    Расцветки 3<br/>
+                                <p className="bottom"  dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_3.details")}}>
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto4} alt="" />
+                            <img src={foto4} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Шорты
+                                    {t("about.aboutPeople.item_4.name")}
                                 </p>
-                                <p className="bottom">
-                                    Меланж<br/>
-                                    Состав: 55% хлопок,<br/>
-                                    45% полиэстер <br/>
-                                    Расцветок 10<br/>
+                                <p className="bottom"
+                                   dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_4.details")}}
+                                >
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto5} alt="" />
+                            <img src={foto5} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Джогеры
+                                    {t("about.aboutPeople.item_5.name")}
                                 </p>
-                                <p className="bottom">
-                                    Меланж<br/>
-                                    Состав: 55% хлопок, <br/>
-                                    45% полиэстер<br/>
-                                    Расцветок 10<br/>
+                                <p className="bottom"
+                                   dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_5.details")}}
+                                >
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto6} alt="" />
+                            <img src={foto6} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Худи
+                                    {t("about.aboutPeople.item_6.name")}
                                 </p>
-                                <p className="bottom">
-                                    Трёхнитка<br/>
-                                    Состав: 100% хлопок<br/>
-                                    Расцветок 10<br/>
+                                <p className="bottom"
+                                   dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_6.details")}}
+                                >
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto7} alt="" />
+                            <img src={foto7} alt=""/>
                             <div className="box-hover">
                                 <p className="hover-name">
-                                    Пижама женская
+                                    {t("about.aboutPeople.item_7.name")}
                                 </p>
-                                <p className="bottom">
-                                    Карде супрем<br/>
-                                    Состав: 100% хлопок<br/>
-                                    Расцветок 10<br/>
+                                <p className="bottom"
+                                   dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_7.details")}}
+                                >
+
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="box">
-                            <img src={foto8} alt="" />
+                            <img src={foto8} alt=""/>
                             <div className="box-hover">
-                                <p className="hover-name">Пижама мужская</p>
-                                <p className="bottom">Карде супрем<br/>
-                                    Состав: 100% хлопок<br/>
-                                    Расцветок 10<br/>
+                                <p className="hover-name">{t("about.aboutPeople.item_8.name")}</p>
+                                <p className="bottom"
+                                   dangerouslySetInnerHTML={{__html:t("about.aboutPeople.item_8.details")}}
+                                >
                                 </p>
                             </div>
                         </div>

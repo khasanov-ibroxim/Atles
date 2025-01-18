@@ -63,14 +63,14 @@
 .fabricSection .box .one{
     display: flex;
     flex-direction: column;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 .fabricSection .box .one p.bottom{
     display: flex;
     align-items: center;
     grid-gap: 5px;
     margin-bottom: 0px;
-    font-size: 16px;
+    font-size: 13px;
     color: black;
 }
 .fabricSection .row:nth-child(3){

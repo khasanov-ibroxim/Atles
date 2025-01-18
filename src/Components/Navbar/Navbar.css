@@ -24,7 +24,7 @@
 .nav-title .col-lg-12 .null {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     grid-gap: 100px;
     align-items: center;
 }
@@ -32,10 +32,12 @@
 .nav-title .col-lg-12 .box ul,
 .nav-title .col-lg-12 .null ul {
     padding: 0px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 82px;
     display: flex;
     grid-gap: 15px;
     width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 
 

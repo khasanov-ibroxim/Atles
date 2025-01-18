@@ -56,6 +56,40 @@ const aboutTranslations = {
                     title:"Участие в крупнейших выставках",
                     bottom:`В октябре 2024 года мы приняли участие в международной выставке «Uzbekistan Textile EXPO Autumn 2024», что стало важным шагом к укреплению наших позиций на рынке и расширению деловых связей.`
                 },
+            },
+            aboutPeople: {
+                item_1: {
+                    name: "Футболка",
+                    details: "Карде супрем - состав: 100% хлопок<br/>Лайкра - состав: 95% хлопок, 5% лайкра<br/>Пенье - состав: 92% хлопок, 8% лайкра<br/>Меланж - состав: 75% хлопок, 25% полиэстер<br/>Расцветок 20"
+                },
+                item_2: {
+                    name: "Поло футболка",
+                    details: "Пике<br/>Состав 100% хлопок<br/>Расцветок 10"
+                },
+                item_3: {
+                    name: "Майки",
+                    details: "Карде супрем<br/>Состав: 100% хлопок<br/>Расцветки 3"
+                },
+                item_4: {
+                    name: "Шорты",
+                    details: "Меланж<br/>Состав: 55% хлопок,<br/>45% полиэстер<br/>Расцветок 10"
+                },
+                item_5: {
+                    name: "Джогеры",
+                    details: "Меланж<br/>Состав: 55% хлопок,<br/>45% полиэстер<br/>Расцветок 10"
+                },
+                item_6: {
+                    name: "Худи",
+                    details: "Трёхнитка<br/>Состав: 100% хлопок<br/>Расцветок 10"
+                },
+                item_7: {
+                    name: "Пижама женская",
+                    details: "Карде супрем<br/>Состав: 100% хлопок<br/>Расцветок 10"
+                },
+                item_8: {
+                    name: "Пижама мужская",
+                    details: "Карде супрем<br/>Состав: 100% хлопок<br/>Расцветок 10"
+                }
             }
         },
         en: {
@@ -123,8 +157,41 @@ const aboutTranslations = {
                     title:"Participation in major exhibitions",
                     bottom:`In October 2024, we took part in the international exhibition "Uzbekistan Textile EXPO Autumn 2024", which was an important step towards strengthening our position in the market and expanding business ties.`
                 },
+            },
+            aboutPeople: {
+                item_1: {
+                    name: "T-shirt",
+                    details: "Carde suprem - composition: 100% cotton<br/>Lycra - composition: 95% cotton, 5% lycra<br/>Penye - composition: 92% cotton, 8% lycra<br/>Melange - composition 75% cotton, 25% polyester<br/>Colors 20"
+                },
+                item_2: {
+                    name: "Polo T-shirt",
+                    details: "Pique<br/>Composition 100% cotton<br/>Colors 10"
+                },
+                item_3: {
+                    name: "T-shirts",
+                    details: "Carde suprem<br/>Composition: 100% cotton<br/>Colors 3"
+                },
+                item_4: {
+                    name: "Shorts",
+                    details: "Melange<br/>Composition: 55% cotton,<br/>45% polyester<br/>Colors 10"
+                },
+                item_5: {
+                    name: "Joggers",
+                    details: "Melange<br/>Composition: 55% cotton,<br/>45% polyester<br/>Colors 10"
+                },
+                item_6: {
+                    name: "Hoodie",
+                    details: "Three-thread<br/>Composition: 100% cotton<br/>Colors 10"
+                },
+                item_7: {
+                    name: "Women's pajamas",
+                    details: "Carde suprem<br/>Composition: 100% cotton<br/>Colors 10"
+                },
+                item_8: {
+                    name: "Men's pajamas",
+                    details: "Carde suprem<br/>Composition: 100% cotton<br/>Colors 10"
+                }
             }
-
         }
     }
 ;

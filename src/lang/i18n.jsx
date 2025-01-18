@@ -54,7 +54,7 @@ const resources = {
         translation: {
             home: homeTranslations.en,
             about: aboutTranslations.en,
-            fabric:FabricTranslate.ru,
+            fabric:FabricTranslate.en,
             contact: contactTranslate.en,
 
             navbar: {

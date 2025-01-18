@@ -4,10 +4,13 @@ import Navbar from '../../../Components/Navbar/Navbar'
 import FabricSection from './FabricSection/FabricSection'
 import Footer from '../../../Components/Footer/Footer'
 import {useParams} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 export default function FabricPage() {
     const {id} = useParams()
     const DataId = parseInt(id)
+
+
   return (
     <div>
         <Navbar/>
