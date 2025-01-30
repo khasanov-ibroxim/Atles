@@ -51,6 +51,9 @@ export default function Navbar({onlyIcon = true}) {
                                 <li>
                                     <Link className='a-text' to='/contact'>{t("navbar.contact")}</Link>
                                 </li>
+                                <li>
+                                    <Link className='a-text' to='/gallery'>{t("navbar.gallery")}</Link>
+                                </li>
                                 <li className={"nav_dropdown"}>
                                     <Dropdown
                                         menu={{

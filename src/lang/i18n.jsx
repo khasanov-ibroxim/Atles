@@ -5,6 +5,7 @@ import homeTranslations from "./translations/homeTranslate.jsx";
 import aboutTranslations from "./translations/aboutTranslate.jsx";
 import contactTranslate from "./translations/contactTranslate.jsx";
 import FabricTranslate from "./translations/fabricTranslate.jsx";
+import {GalleryTranslate} from "./translations/galleryTranslate.jsx";
 
 const resources = {
     ru: {
@@ -13,12 +14,14 @@ const resources = {
             about: aboutTranslations.ru,
             fabric:FabricTranslate.ru,
             contact: contactTranslate.ru,
+            gallery: GalleryTranslate.ru,
 
             navbar: {
                 home: "Главная",
                 about: "О нас",
                 production: "Производство",
                 contact: "Контакты",
+                gallery: "Галерея",
                 fabric:{
                     item_1:"Раскройный цех",
                     item_2:"Швейный цех",
@@ -56,12 +59,13 @@ const resources = {
             about: aboutTranslations.en,
             fabric:FabricTranslate.en,
             contact: contactTranslate.en,
-
+            gallery: GalleryTranslate.en,
             navbar: {
                 home: "Home",
                 about: "About Us",
                 production: "Production",
                 contact: "Contacts",
+                gallery: "Gallery",
                 fabric:{
                     item_1:"Cutting shop",
                     item_2:"Sewing Shop",

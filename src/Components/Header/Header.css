@@ -97,7 +97,7 @@ header p.slide{
         width: 70%;
         height: 150px;
     }
-    .swiper-backface-hidden .swiper-slide{
+    .mySwiper .swiper-backface-hidden .swiper-slide{
         width: 20% !important;
     }
     header .header-title h1.top{
@@ -116,7 +116,7 @@ header p.slide{
     header .header-title h1.top img{
         width: 200px;
     }
-    .swiper-backface-hidden .swiper-slide{
+    .mySwiper .swiper-backface-hidden .swiper-slide{
         width: 28% !important;
         margin-right: 30px !important;
     }
@@ -143,7 +143,7 @@ header p.slide{
         font-size: 13px;
         text-align: center;
     }
-    .swiper-backface-hidden .swiper-slide{
+    .mySwiper .swiper-backface-hidden .swiper-slide{
         width: 35% !important;
         margin-right: 10px !important;
     }
